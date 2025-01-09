@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Get Started</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: red;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%; 
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the World of Entertainment</h1>
+        <p>Explore a vast library of movies, TV shows, documentaries, and more. 
+           Find something to watch for everyone in the family.</p>
+
+        <div class="image-grid">
+            <img src="https://image.tmdb.org/t/p/w500/kgkTEo8xFpxJAU7jzqDEKunqZjL.jpg" alt="The Witcher"> 
+            <img src="https://image.tmdb.org/t/p/w500/6kbAMLteGq0Jm87VikJvP3BL6pr.jpg" alt="Stranger Things">
+            <img src="https://image.tmdb.org/t/p/w500/jBJWaqoSCx0dVH7tt21Cy3Srn7I.jpg" alt="The Crown">
+            <img src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FD93jcNf.jpg" alt="Squid Game">
+        </div>
+
+        <h2>Experience Immersive Storytelling</h2>
+        <p>Enjoy high-quality video with stunning visuals and crystal-clear sound. 
+           Get lost in captivating narratives and unforgettable characters.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/bQXeImGGXp0" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
